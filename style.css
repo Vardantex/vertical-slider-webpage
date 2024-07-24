@@ -1,0 +1,130 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#bg1 {
+    background-image: url("media/nature.jpg");
+}
+
+#bg2 {
+    background-image: url("media/sky.jpg");
+}
+
+#bg3 {
+    background-image: url("media/castle.jpg");
+}
+#bg4 {
+    background-image: url("media/eagle.jpg");
+}
+
+
+body {
+
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+height: 100vh;
+
+}
+
+.slider-container {
+    position: relative;
+overflow: hidden;
+width: 100vw;
+height: 100vh;
+
+}
+
+.left-slide {
+
+    height: 100%;
+    width: 30%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.left-slide > div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.left-slide h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-top: -30px;
+    transition: transform .5s ease-in-out;
+}
+
+.right-slide {
+height: 100%;
+position: absolute;
+top: 0;
+left: 30%;
+width: 65%;
+right: 0;
+transition: transform .5s ease-in-out;
+
+}
+
+.right-slide > div {
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+}
+
+button {
+background-color: #fff;
+border: none;
+color: #aaa;
+cursor: pointer;
+font-size: 16px;
+padding: 15px;
+
+
+}
+
+button:hover {
+
+    color: #222;
+
+}
+
+button:focus {
+    outline: none;
+}
+
+.slider-container .action-buttons button {
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    z-index: 100;
+
+}
+
+.slider-container .action-buttons .down-button {
+
+transform: translateX(-100%);
+border-top-left-radius: 5px;
+border-bottom-left-radius: 5px;
+
+
+}
+
+.slider-container .action-buttons .up-button {
+transform: translateY(-100%);
+border-top-right-radius: 5px;
+border-bottom-right-radius: 5px;
+
+}
+
